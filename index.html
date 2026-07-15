@@ -1,42 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanvi Singh Portfolio</title>
+
+    <title>Tanvi Singh | Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
 
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="logo.png" alt="Tanvi Singh Logo" class="logo">
-            </div>
+    <!-- Navbar -->
+    <header>
 
-            <ul class="nav-links">
-                <li><a href="#" class="nav-item">Home</a></li>
-                <li><a href="#" class="nav-item">About</a></li>
-                <li><a href="#" class="nav-item">Skills</a></li>
-                <li><a href="#" class="nav-item">Projects</a></li>
-                <li><a href="#" class="nav-item">Certifications</a></li>
-            </ul>
+    <div class="logo">
+        <img src="Logo.png" alt="Logo">
+    </div>
+
+    <div id="particles-js"></div>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Certificates</a>
+            <a href="#">Contact</a>
+
         </nav>
+
     </header>
 
+    <!-- Hero Section -->
+
     <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Tanvi Singh</h1>
-            <h3>Data Scientist <span>|</span> Data Analyst <span>|</span> Data Engineer</h3>
-            <div class="hero-buttons">
-                <button class="btn btn-primary">View Projects</button>
-                <button class="btn btn-secondary">Download Resume</button>
-                <button class="btn btn-outline">Contact Me</button>
+
+        <!-- Left Side -->
+
+        <div class="hero-left">
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+
             </div>
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Tanvi Singh</h1>
+
+            <h2>Data Scientist | Data Analyst | Data Engineer</h2>
+
+            <p>
+
+                Passionate about Data Science, Machine Learning,
+                Data Analytics and building interactive dashboards.
+
+            </p>
+
+            <div class="buttons">
+
+                <a href="#" class="btn1">
+                    Download CV
+                </a>
+
+                <a href="#" class="btn2">
+                    Contact Me
+                </a>
+
+            </div>
+
         </div>
+
+        <!-- Right Side -->
+
+        <div class="hero-right">
+
+            <img src="buiseness-removebg-preview.png" alt="Profile">
+
+        </div>
+
     </section>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js",{
+  particles:{
+    number:{value:80},
+    color:{value:"#7c5cff"},
+    shape:{type:"circle"},
+    opacity:{value:0.3},
+    size:{value:3},
+    move:{speed:2},
+    line_linked:{
+      enable:true,
+      color:"#7c5cff",
+      opacity:0.3
+    }
+  }
+});
+</script>
+
 </body>
+
 </html>
