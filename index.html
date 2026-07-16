@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="UTF-8">
@@ -11,7 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -19,106 +18,236 @@
 
 <body>
 
-    <!-- Navbar -->
+    <!-- Header -->
     <header>
 
-    <div class="logo">
-        <img src="Logo.png" alt="Logo">
-    </div>
-
-    <div id="particles-js"></div>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
 
         <nav>
-
             <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#about">About</a>
             <a href="#">Skills</a>
             <a href="#">Projects</a>
             <a href="#">Certificates</a>
             <a href="#">Contact</a>
-
         </nav>
 
     </header>
 
-    <!-- Hero Section -->
+    <!-- Wrapper -->
+    <div class="particles-wrapper">
 
-    <section class="hero">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
 
-        <!-- Left Side -->
+        <!-- Hero Section -->
+        <section class="hero">
 
-        <div class="hero-left">
+            <div class="hero-left">
 
-            <div class="social-icons">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
 
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                <h3>Hello, I'm</h3>
 
-                <a href="#">
-                    <i class="fab fa-github"></i>
-                </a>
+                <h1>Tanvi Singh</h1>
 
-            </div>
+                <h2>Data Scientist | Data Analyst | Data Engineer</h2>
 
-            <h3>Hello, I'm</h3>
+                <p>
+                    Passionate about Data Science, Machine Learning,
+                    Data Analytics and building interactive dashboards.
+                </p>
 
-            <h1>Tanvi Singh</h1>
+                <div class="buttons">
 
-            <h2>Data Scientist | Data Analyst | Data Engineer</h2>
+                    <a href="#" class="btn1">
+                        Download CV
+                    </a>
 
-            <p>
+                    <a href="#" class="btn2">
+                        Contact Me
+                    </a>
 
-                Passionate about Data Science, Machine Learning,
-                Data Analytics and building interactive dashboards.
-
-            </p>
-
-            <div class="buttons">
-
-                <a href="#" class="btn1">
-                    Download CV
-                </a>
-
-                <a href="#" class="btn2">
-                    Contact Me
-                </a>
+                </div>
 
             </div>
 
-        </div>
+            <div class="hero-right">
 
-        <!-- Right Side -->
+                <img src="buiseness-removebg-preview.png" alt="Profile">
 
-        <div class="hero-right">
+            </div>
 
-            <img src="buiseness-removebg-preview.png" alt="Profile">
+        </section>
 
-        </div>
+        <!-- About -->
+        <section id="about">
 
-    </section>
+            <h2 class="section-title">About Me</h2>
 
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <div class="about-container">
 
-<script>
-particlesJS("particles-js",{
-  particles:{
-    number:{value:80},
-    color:{value:"#7c5cff"},
-    shape:{type:"circle"},
-    opacity:{value:0.3},
-    size:{value:3},
-    move:{speed:2},
-    line_linked:{
-      enable:true,
-      color:"#7c5cff",
-      opacity:0.3
-    }
-  }
-});
-</script>
+                <!-- Left -->
+                <div class="about-left">
+
+                    <div class="profile-box">
+                        <img src="Formal.png" alt="Tanvi Singh">
+                    </div>
+
+                </div>
+
+                <!-- Center -->
+                <div class="about-right">
+
+                    <div class="about-card">
+
+                        <h3>Introduction</h3>
+
+                        <p>
+                            Hello! I'm <strong>Tanvi Singh</strong>,
+                            a passionate Data Analyst and aspiring Data Scientist
+                            dedicated to transforming raw data into meaningful insights.
+                            I enjoy solving real-world problems using data analytics,
+                            visualization, and machine learning.
+                        </p>
+
+                    </div>
+
+                    <div class="about-card">
+
+                        <h3>Interests</h3>
+
+                        <div class="interest-list">
+                            <span>📊 Data Analytics</span>
+                            <span>🤖 Machine Learning</span>
+                            <span>📈 Power BI</span>
+                            <span>🗄 SQL</span>
+                            <span>🐍 Python</span>
+                            <span>📉 Data Visualization</span>
+                        </div>
+
+                    </div>
+
+                    <div class="about-card">
+
+                        <h3>Current Focus</h3>
+
+                        <p>
+                            Currently enhancing my skills in Data Engineering,
+                            Machine Learning and AI Technologies while building
+                            impactful portfolio projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="about-side">
+
+                    <div class="glance">
+
+                        <h3>At a Glance</h3>
+
+                        <div class="glance-box">
+                            <h4>Projects</h4>
+                            <span>5+</span>
+                        </div>
+
+                        <div class="glance-box">
+                            <h4>Certificates</h4>
+                            <span>10+</span>
+                        </div>
+
+                        <div class="glance-box">
+                            <h4>Tools</h4>
+                            <span>Python • SQL • Power BI</span>
+                        </div>
+
+                        <div class="glance-box">
+                            <h4>Goal</h4>
+                            <span>Data Scientist</span>
+                        </div>
+
+                        <div class="about-image">
+                            <img src="robo.png" alt="Robot">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80
+                },
+                color: {
+                    value: "#7c5cff"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.3
+                },
+                size: {
+                    value: 3
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#7c5cff",
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2
+                }
+            },
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    }
+                },
+                modes: {
+                    grab: {
+                        distance: 180,
+                        line_linked: {
+                            opacity: 0.6
+                        }
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 
 </body>
-
 </html>
