@@ -365,6 +365,90 @@
 
         </section>
 
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Projects</h2>
+
+                <div class="projects-container">
+
+          <!-- Card 1 -->
+                    <div class="project-card"
+                        onclick="openModal(
+                        'House Price Prediction',
+                        'images\house.jpg',
+                        'A machine learning project that predicts house prices using regression algorithms. Performed data preprocessing, feature engineering and model evaluation.',
+                        'Python | Pandas | Scikit-Learn | Matplotlib',
+                        'https://github.com/yourgithub/project1',
+                        'https://yourprojectdemo.com'
+                        )">
+
+                        <img src="images\House price.jpg" alt="">
+                        <h3>House Price Prediction</h3>
+
+                     </div>
+
+        <!-- Card 2 -->
+                    <div class="project-card"
+                        onclick="openModal(
+                        'Egg Quality Grading',
+                        'images\chicken-eggs.jpg',
+                        'Machine learning project that classifies eggs into different quality grades based on their physical characteristics.',
+                        'Python | OpenCV | TensorFlow | Keras | NumPy | Pandas | Matplotlib | CNN',
+                        'https://github.com/yourgithub/project2',
+                        'https://yourdemo.com'
+                         )">
+
+                         <img src="images\chicken-eggs.jpg" alt="">
+                         <h3>Egg Quality Grading</h3>
+
+                    </div>
+
+        <!-- Card 3 -->
+                    <div class="project-card"
+                        onclick="openModal(
+                        'Smart Traffic Monitoring And Penalty System',
+                        'images\smart-traffic-management-stockcake.jpg',
+                        'AI-based traffic monitoring system with automatic penalty generation and helmet detection.',
+                        'Python | OpenCV | YOLOv8 | EasyOCR | Flask | SQLite | HTML | CSS | JavaScript',
+                        'https://github.com/yourgithub/project3',
+                        'https://yourdemo.com'
+                         )">
+
+                        <img src="images\smart-traffic-management-stockcake.jpg" alt="">
+                        <h3>Smart Traffic Monitoring And Penalty System</h3>
+
+                    </div>
+
+                </div>
+        </section>
+
+<!-- Modal -->
+        <div id="projectModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <img id="modalImg">
+
+                    <h2 id="modalTitle"></h2>
+
+                    <p id="modalDesc"></p>
+
+                    <h4>Technologies</h4>
+
+                    <p id="modalTech"></p>
+
+                <div class="buttons">
+
+                    <a id="githubBtn" target="_blank">GitHub</a>
+
+                    <a id="liveBtn" target="_blank">Live Demo</a>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
     <script src="script.js"></script>
